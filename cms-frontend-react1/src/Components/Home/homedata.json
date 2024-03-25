@@ -1,0 +1,97 @@
+{
+    "cultural": [{
+        "club": "CROTONIA",
+        "cardbody": "<h1>CROTONIA</h1>  Crotonia is IIIT Lucknow's Literary Society.  Crotonia repertoire includes works such as the annual magazine of IIIT Lucknow, MUN and the first successful edition of TEDx.  Crotonia conducts debate competition,literary competitions.",
+        "logo": "../Images/crotonia_logo.jpg"
+    },
+    {
+        "club": "UTKRISHT",
+        "cardbody": "<h1>UTKRISHT</h1>Utkrisht is the fine art society of IIIT Lucknow. Utkrisht encourages students to persuetheir hobbies and sharpen their skills of creativeness. Utkrisht conducts designing and fine-arts competitions etc.",
+        "logo": "../Images/utkrisht_logo.jpg"
+    },
+    {  
+        "club": "ZEPHYR",
+        "cardbody": "<h1>ZEPHYR</h1>Zephyr  is the Dance society of IIIT Lucknow. Zephyer hosts various online and offline student dancing competitions every year, including vibrant feet which is an online inter-college dance competition.",
+        "logo": "../Images/zaphyr_logo.jpg"
+
+    },
+    {   
+        "club": "ESTRELLA",
+        "cardbody": "<h1>ESTRELLA</h1>Estrella is the music society of IIIT Lucknow.  Estrella organizes various events, such as ANTAKSHARI nights, Jam nights and musical competitions like <b>TARANG, Octave</b> to promote music in all its forms.  Estrella also performs band music with its own band-group,<b>Rudra.</b>",
+        "logo": "crotonia_logo.jpg"
+
+    },
+    {   
+        "club": "AFTERDARK",
+        "cardbody": "<h1>AFTERDARK</h1>Afterdark is the photography club of IIIT Lucknow.  The clubs mission and vision is to instil a  love and respect for photography.",
+        "logo": "<img src={afterdark_logo} style= {{width:69%}} > <p><b>AFTERDARK</b></p>"
+
+    },
+    {   
+        "club": "GOONJ",
+        "cardbody": "<h1>GOONJ</h1>Goonj is the Dramatics Society of IIIT Lucknow.  Among our most renowned creations are scripted plays, NUKKAD NAATAK, Mime Art and solo performances. Goonj conducts so many drama competitions i.e. <b>Navras,</b> <b>Jokes Apart,</b> <b>Ink N'Qlogoll</b> etc.",
+        "logo": "<img src={goonj_logo} style= {{width:69%}} > <p><b>GOONJ</b></p>"
+
+    }],
+    "technical": [ {
+        "club": "CP",
+        "cardbody": "<h1>Competitive Programming</h1> The Competitive Programming wing of AXIO5 aims over developing problem-solving skills and inculcate an interest in Data Structures and Algorithms. CP wing conducts many competitive coding competitions i.e. <b>Freshers'Cup,</b> <b>IIITL Cup</b> etc.",
+        "logo": "<img src={cp_logo} style= {{width:82%}} > <p><b>CP WING</b></p>"
+
+    },
+    {
+        "club": "ML",
+        "cardbody": "<h1>Machine Learning</h1> The Machine Learning is a subset of artificial intelligence (AI).  Machine learning (ML) is the area of computational science that focuses on analyzing and interpreting patterns and structures in data to enable learning, reasoning, and decision making outside of human interaction. ML wing organizes ml competitions such as <b>IIITL Kaggle Competition.</b>",
+        "logo": "<img src={ml_logo} style= {{width:82%}} > <p><b>ML WING </b></p>"
+
+    },
+    {
+        "club": "WEB",
+        "cardbody": "<h1>Web Development</h1> The Web Development Wing of AXIOS aims to bring the fun of the web to everyone.  Its final manifestation, in a planned and structured process (or sometimes in a chaotic way).  Web wing organises web development competitions such as <b>CSS Battle,</b> <b>HackDevPost</b> etc.",
+    
+        "logo": "<img src={webd_logo} style= {{width:82%}} > <p><b>WEB-DEV WING</b></p>"
+
+    },
+    {
+        "club": "FOSS",
+        "cardbody": "<h1>Free Open Source Software</h1> Free Open Source Software</h1> The FOSS wing of AXIOS aims to inculcate a culture of using contributing to, and maintaining Open Source software. Also organizes many FOSS events.",
+        "logo": "<img src={foss_logo} style= {{width:82%}} > <p><b>FOSS WING</b></p>"
+
+    },
+    {
+        "club": "APP",
+        "cardbody": "<h1>App Development</h1> The App Development Wing of AXIOS aims to get you started with developing the future of user-friendly software. It organizes App Development competition, <b>Appophilia.</b>",
+        "logo": "<img src={appd_logo} style= {{width:82%}} > <p><b>APP-DEV WING</b></p>"
+
+    },
+    {
+        "club": "BLOCKCHAIN",
+        "cardbody": "<h1>Blockchain</h1> AXIOS has recently introduced a new wing called as blockchain.  Blockchain technology is an advanced database mechanism that allows transparent information sharing within a business network.",
+        "logo": "<img src={blockchain_logo} style= {{width:82%}} > <p><b>BLOCKCHAIN WING</b></p>"
+
+    },
+    {
+        "club": "INFOSEC",
+        "cardbody": "<h1>Information Security </h1>The Infosec Wing of AXIOS aims to educate people interested in the field of information security and expose them to the technical and theoretical skills reqlogored for it.",
+        "logo": "<img src={infosec_logo} style= {{width:82%}} > <p><b>INFOSEC WING</b></p>"
+
+    },
+    {
+        "club": "DESIGN",
+        "cardbody": "<h1>Design Wing </h1>The Design Wing of AXIOS aims on designing the weekly post contents of festival posts, like: Republic day, Holi, etc. Designing of event posters, Rulebooks, Brochures, Logo & Merch, etc. of Enspire and Eqlogonox.  You will learn how to use designing tools like: canva, photoshop and illustrator effectively.",
+        "logo": "<img src={design_logo} style= {{width:82%}} > <p><b>Design Wing</b></p>"
+
+    }],
+    "other": [{
+        "club": "E_CELL",
+        "cardbody": "<h1>E-Cell </h1>The Indian Institute of Information Technology, Lucknow students that make up the Entrepreneurship Cell (E-Cell) are committed to fostering the entrepreneurial spirit.  E-Cell conducts an annual E-Summit, Enspire.",
+        "logo": "<img src={E-cell_logo} style= {{width:62%}} > <p><b>E-CELL</b></p>"
+
+    },
+    {
+        "club": "EIFER",
+        "cardbody": "<h1>Eifer </h1>Eifer is the sports club of IIIT Lucknow.  Eifer aims to make the growth full of enjoyment with various games like Badminton, Cricket, Carrom, Table Tennis, Cricket, etc & and also organizes Inter-branch Sports Competitions.",
+        "logo": "<img src={eifer_logo} style= {{width:62%}} > <p><b>EIFER</b></p>"
+    }
+]
+}

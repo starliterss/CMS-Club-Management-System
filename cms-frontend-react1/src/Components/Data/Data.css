@@ -1,0 +1,130 @@
+#data_section {
+  padding: 3vh 4vw;
+  padding-bottom: 4vh;
+  overflow: auto;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#data_head {
+  display: flex;
+  justify-content: space-around;
+  padding: 2vw;
+  border-radius: 8px;
+}
+#data_head h1 {
+  cursor: pointer;
+  font-size: 3vw;
+  padding: 4px;
+  border: 2px solid;
+  border-radius: 12px;
+  background-color: #ccd0d2;
+  color: black;
+  box-shadow: yellow 2px 2px 6px;
+}
+#data_head h1:hover {
+  transform: translateY(-2px);
+  background-image: linear-gradient(to top right, white 20%, rgb(9, 156, 117));}
+#data_head h1:active {
+  transform: scaleY(0.9);
+  box-shadow: inset white -2px -2px 5px;
+}
+aside {
+  border-radius: 12px;
+}
+aside div {
+  margin: 1.5vh;
+  padding: 1vw;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 2px solid aqua;
+  background-color: #ccd0d2;
+  color: black;
+  cursor: pointer;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: goldenrod 2px 2px 6px;
+}
+aside div:hover {
+  transform: translateY(-2px);
+  background-image: linear-gradient(to top right, white 20%, rgb(9, 156, 117));
+}
+
+aside div:active {
+  transform: scaleY(0.9);
+  box-shadow: inset black -2px -2px 5px;
+}
+#data_article {
+  border: 2px solid aqua;
+  border-radius: 12px;
+  padding: 4vw;
+  font-family: "Lora", serif;
+  /* height:45vh; */
+  width: 54vw;
+  height: 90vh;
+  box-shadow: white 3px 4px 10px;
+  overflow: auto;
+}
+.content {
+  display: none;
+}
+#data_article button {
+  margin: 0 20%;
+  text-align: center;
+  background-color: green;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: white;
+  width: 60%;
+  height: 4vh;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px white;
+  text-shadow: black 1px 1px;
+}
+#data_article button:hover {
+  transform: translateY(-6px);
+  cursor: pointer;
+  background-color: #3bad11;
+}
+#data_article button:active {
+  box-shadow: inset black 1px 1px 3px;
+  background-color: green;
+}
+#data_article figure {
+  display: inline-block;
+  margin: 5vh;
+  width: 20vw;
+}
+#data_article figure img{
+  margin: 0;
+  width:80%;
+  border-radius:12%;
+}
+#data_article figcaption,
+#data_article b {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+#data_article img {
+  display: block;
+  width: 23%;
+  border-radius: 20%;
+  box-shadow: white 2px 2px 4px;
+  margin: auto;
+}
+#data_article h2 {
+  margin: 1vh;
+}
+#data_article h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#data_article p {
+  margin: 2vh 0;
+}
+a{
+  text-decoration: none;
+}

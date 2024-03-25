@@ -1,0 +1,25 @@
+header{
+    padding: 10px;
+    background-image:url(../Images/Screenshot_20230211_010338.png);
+    background-color: #4e79e6;
+    background-size:cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 22vh;
+}
+header div{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 1vh 1vw;
+}
+ #h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ #h2{
+    font-family: 'Raleway', sans-serif;
+}

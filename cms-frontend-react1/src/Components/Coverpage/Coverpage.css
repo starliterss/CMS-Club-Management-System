@@ -1,0 +1,41 @@
+#cover{
+    /* background:url("../Images/covervideo.mp4"); */
+    width: 100vw;
+    height: 100vh;
+    /* background-size:cover; */
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+video{
+    width:100vw;
+    height:100vh;
+    object-fit: cover;
+}
+#type{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#coverbutton{
+    background-color:#337c99;
+    margin:20px;
+    padding:6px 10px;
+    color:black;
+    border-radius:12px;
+    font-size:1.5rem;
+    cursor: pointer;
+    box-shadow: white 2px 2px 6px;
+    transition:transform 0.3s ease-in-out;
+}
+#coverbutton:hover{
+    transform:translateY(-5px);
+}
+#coverbutton:active{
+    background-color: #080c0e;
+    box-shadow:black 1px 1px 3px;
+}

@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --bg-clr : rgb(70, 68, 110);
+    --text-clr : white;
+    /* --box-shadow: white; */
+    /* --home-bg: url("./Components/Images/home_back.jpg"); */
+    transition: all 0.3s ease-in-out;
+}
+
+.main_body{
+    background-image: var(--home-back);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-color: black;
+}
