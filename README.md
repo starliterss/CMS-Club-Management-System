@@ -19,9 +19,3 @@ This is a web development project focused on managing college clubs and their up
 
 1. Access the web application in your browser.
 2. Navigate through the different sections to view notices, download study materials, learn about clubs, and register for membership.
-
-## Acknowledgements
-
-- [Bootstrap](https://getbootstrap.com/) - Front-end framework
-- [Express.js](https://expressjs.com/) - Web application framework for Node.js
-- [MongoDB](https://www.mongodb.com/) - Database management system
