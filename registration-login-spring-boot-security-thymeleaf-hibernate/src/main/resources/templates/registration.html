@@ -1,0 +1,198 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="ISO-8859-1">-->
+<!--<title>Registration</title>-->
+<!--<link rel="stylesheet"-->
+<!--	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+<!--	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"-->
+<!--	crossorigin="anonymous">-->
+<!--	<style>-->
+<!--		  body {-->
+<!--        background-image: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1060&t=st=1688749421~exp=1688750021~hmac=1efa546e0eb30894315de5a25664feacec39fece7c9797de2859403221827c32');-->
+<!--        background-size: cover;-->
+<!--        background-repeat: no-repeat;-->
+<!--    }-->
+<!--    .text-light {-->
+<!--        color: white;-->
+<!--    }-->
+<!--    .text-info {-->
+<!--        color: #43C6DB;-->
+<!--    }-->
+<!--    .w-10 {-->
+<!--        width: 400px;-->
+<!--    }-->
+<!--	</style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--	&lt;!&ndash; create navigation bar ( header) &ndash;&gt;-->
+<!--	<nav class="navbar navbar-inverse navbar-fixed-top">-->
+<!--		<div class="container">-->
+<!--			<div class="navbar-header">-->
+<!--				<button type="button" class="navbar-toggle collapsed"-->
+<!--					data-toggle="collapse" data-target="#navbar" aria-expanded="false"-->
+<!--					aria-controls="navbar">-->
+<!--					<span class="sr-only">Toggle navigation</span> <span-->
+<!--						class="icon-bar"></span> <span class="icon-bar"></span> <span-->
+<!--						class="icon-bar"></span>-->
+<!--				</button>-->
+<!--&lt;!&ndash;				<a class="navbar-brand" href="#" th:href="@{/}">Registration and&ndash;&gt;-->
+<!--&lt;!&ndash;					Login Module</a>&ndash;&gt;-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</nav>-->
+
+<!--<br>-->
+<!--<br>-->
+<!--	&lt;!&ndash; Create HTML registration form &ndash;&gt;-->
+<!--	<div class="container">-->
+<!--		<div class="row">-->
+<!--			<div class="col-md-6 col-md-offset-3">-->
+
+<!--				&lt;!&ndash; success message &ndash;&gt;-->
+<!--				<div th:if="${param.success}">-->
+<!--					<div class="alert alert-info">You've successfully registered-->
+<!--						to our awesome app!</div>-->
+<!--				</div>-->
+
+<!--				<h1 class="text-light">CMS REGISTER</h1>-->
+
+<!--				<form th:action="@{/registration}" method="post" th:object="${user}">-->
+<!--					<div class="form-group">-->
+<!--						<label class="control-label text-light" for="firstName"> First Name </label>-->
+<!--						<input id="firstName" class="form-control" th:field="*{firstName}"-->
+<!--							required autofocus="autofocus" />-->
+<!--					</div>-->
+
+<!--					<div class="form-group">-->
+<!--						<label class="control-label text-light" for="lastName"> Last Name </label> <input-->
+<!--							id="lastName" class="form-control" th:field="*{lastName}"-->
+<!--							required autofocus="autofocus" />-->
+<!--					</div>-->
+
+<!--					<div class="form-group">-->
+<!--						<label class="control-label text-light" for="email"> Email </label> <input-->
+<!--							id="email" class="form-control" th:field="*{email}" required-->
+<!--							autofocus="autofocus" />-->
+<!--					</div>-->
+
+<!--					<div class="form-group">-->
+<!--						<label class="control-label text-light" for="password"> Password </label> <input-->
+<!--							id="password" class="form-control" type="password"-->
+<!--							th:field="*{password}" required autofocus="autofocus" />-->
+<!--					</div>-->
+
+<!--					<div class="form-group">-->
+<!--						<button type="submit" class="btn btn-success">Register</button>-->
+<!--						<span><span class="text-light">Already registered? </span> <a href="/" th:href="@{/login}"><span class="text-info">Login-->
+<!--								here</span></a></span>-->
+<!--					</div>-->
+<!--				</form>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Registration</title>
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		  crossorigin="anonymous">
+	<style>
+body {
+    background-image: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1060&t=st=1688749421~exp=1688750021~hmac=1efa546e0eb30894315de5a25664feacec39fece7c9797de2859403221827c32');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-light {
+    color: white;
+}
+.text-info {
+    color: #43C6DB;
+}
+.w-10 {
+    width: 400px;
+}
+.container{
+    margin:auto;
+    }
+</style>
+</head>
+<body>
+
+<!-- create navigation bar ( header) -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+		</div>
+	</div>
+</nav>
+
+<br>
+<br>
+<!-- Create HTML registration form -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 mx-auto">
+
+			<!-- success message -->
+			<div th:if="${param.success}">
+				<div class="alert alert-info">You've successfully registered to our awesome app!</div>
+			</div>
+
+<!--			<h1 class="text-center text-light">CMS REGISTER</h1>-->
+            <br><br><br><br><br><br>
+			<form th:action="@{/registration}" method="post" th:object="${user}">
+				<div class="w-10 container form-group">
+					<fieldset>
+						<legend class="text-center text-light"><h2><b>CMS REGISTER<b></b></h2></legend>
+
+						<div class="form-group">
+							<label class="control-label text-light" for="firstName">First Name</label>
+							<input id="firstName" class="form-control" th:field="*{firstName}" required autofocus="autofocus" />
+						</div>
+
+						<div class="form-group">
+							<label class="control-label text-light" for="lastName">Last Name</label>
+							<input id="lastName" class="form-control" th:field="*{lastName}" required autofocus="autofocus" />
+						</div>
+
+						<div class="form-group">
+							<label class="control-label text-light" for="email">Email</label>
+							<input id="email" class="form-control" th:field="*{email}" required autofocus="autofocus" />
+						</div>
+
+						<div class="form-group">
+							<label class="control-label text-light" for="password">Password</label>
+							<input id="password" class="form-control" type="password" th:field="*{password}" required autofocus="autofocus" />
+						</div>
+						<div class="form-group text-center">
+<!--							<button type="submit" class="btn btn-success">Register</button>-->
+							<span class="text-light">Already registered? </span><a href="/" th:href="@{/login}" class="text-info">Login here</a><br>
+							<div class="col-sm-6 col-sm-offset-3">
+								<br>
+							<button type="submit" class="form-control btn btn-success">Register</button>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+
+
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="ISO-8859-1">-->
+<!--<title>Registration and Login App</title>-->
+
+<!--<link rel="stylesheet"-->
+<!--	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+<!--	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"-->
+<!--	crossorigin="anonymous">-->
+<!--	<style>-->
+<!--    body {-->
+<!--        background-image: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1060&t=st=1688749421~exp=1688750021~hmac=1efa546e0eb30894315de5a25664feacec39fece7c9797de2859403221827c32');-->
+<!--        background-size: cover;-->
+<!--        background-repeat: no-repeat;-->
+<!--    }-->
+<!--     .text-light {-->
+<!--        color: white;-->
+<!--    }-->
+<!--    .text-info{-->
+<!--       color: #43C6DB;-->
+<!--    }-->
+<!--    .w-10{-->
+<!--    width:400px;-->
+<!--    }-->
+
+<!--</style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--	&lt;!&ndash; create navigation bar ( header) &ndash;&gt;-->
+<!--	<nav class="navbar navbar-inverse navbar-fixed-top">-->
+<!--		<div class="container my-4">-->
+<!--			<div class="navbar-header">-->
+<!--				<button type="button" class="navbar-toggle collapsed"-->
+<!--					data-toggle="collapse" data-target="#navbar" aria-expanded="false"-->
+<!--					aria-controls="navbar">-->
+<!--					<span class="sr-only">Toggle navigation</span> <span-->
+<!--						class="icon-bar"></span> <span class="icon-bar"></span> <span-->
+<!--						class="icon-bar"></span>-->
+<!--				</button>-->
+<!--				<a class="navbar-brand" href="#" th:href="@{/}">Registration and-->
+<!--					Login Module</a>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</nav>-->
+
+<!--	<br>-->
+<!--	<br>-->
+<!--	<div class = "container my-4 ">-->
+<!--		<div class = "row">-->
+<!--			<div class = "col-md-6 col-md-offset-3">-->
+
+<!--				<h1 class="text-center text-light my-3"> User Login Page </h1>-->
+<!--				<br>-->
+<!--				<br>-->
+<!--				<br>-->
+<!--				<br>-->
+<!--				<br>-->
+<!--				<br>-->
+
+<!--				<form th:action="@{/login}" method="post">-->
+
+<!--					&lt;!&ndash; error message &ndash;&gt;-->
+<!--					<div th:if="${param.error}">-->
+<!--						<div class="alert alert-danger">Invalid username or-->
+<!--							password.</div>-->
+<!--					</div>-->
+
+<!--					&lt;!&ndash; logout message &ndash;&gt;-->
+<!--					<div th:if="${param.logout}">-->
+<!--						<div class="alert alert-info">You have been logged out.</div>-->
+<!--					</div>-->
+
+<!--                <div class=" w-10">-->
+<!--					<div class = "form-group text-light my-2">-->
+<!--						<label for ="username" class="text-light display-4 " > Username </label> :-->
+<!--						<input type="text" class = "form-control" id ="username" name = "username"-->
+<!--						placeholder="Enter Username" autofocus="autofocus">-->
+<!--					</div>-->
+
+<!--					<div class="form-group text-light ">-->
+<!--						<label for="password" class="text-light display-4">Password</label>: <input type="password"-->
+<!--							id="password" name="password" class="form-control"-->
+<!--							placeholder="Enter Password" />-->
+<!--					</div>-->
+
+<!--					<br>-->
+
+<!--					<div class="form-group">-->
+<!--						<div class="row">-->
+<!--							<div class="col-sm-6 col-sm-offset-3">-->
+<!--								<input type="submit" name="login-submit" id="login-submit"-->
+<!--									class="form-control btn btn-info" value="Log In" />-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+
+<!--				</form>-->
+<!--				<span class="form-group">-->
+<!--					<span><span class="text-light">New user? </span> <a href="/" th:href="@{/registration}"><span class="text-info">Register-->
+<!--						here</span></a></span>-->
+<!--				</span>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Registration and Login App</title>
+
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		  crossorigin="anonymous">
+	<style>
+    body {
+        background-image: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1060&t=st=1688749421~exp=1688750021~hmac=1efa546e0eb30894315de5a25664feacec39fece7c9797de2859403221827c32');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .text-light {
+        color: white;
+    }
+    .text-info {
+        color: #43C6DB;
+    }
+    .w-10 {
+        width: 400px;
+    }
+    .login-message {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .container{
+    margin:auto;
+    }
+</style>
+</head>
+<body>
+
+<!-- create navigation bar ( header) -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container my-4">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+<!--			<a class="navbar-brand" href="#" th:href="@{/}">Registration and-->
+<!--				Login Module</a>-->
+		</div>
+	</div>
+</nav>
+
+<br>
+<br>
+<div class="container my-4">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 mx-auto">
+
+
+
+			<form th:action="@{/login}" method="post">
+
+				<!-- error message -->
+				<div th:if="${param.error}">
+					<div class="alert alert-danger">Invalid username or
+						password.</div>
+				</div>
+
+				<!-- logout message -->
+				<div th:if="${param.logout}">
+					<div class="alert alert-info">You have been logged out.</div>
+				</div>
+                <br><br><br><br><br><br><br><br><br>
+				<div class="w-10 container ml-50">
+					<fieldset>
+						<legend class="text-center text-light display-1"><h2><b>CMS LOGIN</b></h2></legend>
+                        <br>
+						<div class="form-group text-light my-2">
+							<label for="username" class="text-light display-4">Email-id</label>
+							<input type="text" class="form-control" id="username" name="username"
+								   placeholder="Enter your email-id" autofocus="autofocus">
+						</div>
+
+						<div class="form-group text-light">
+							<label for="password" class="text-light display-4">Password</label>
+							<input type="password" id="password" name="password" class="form-control"
+								   placeholder="Enter Password" />
+						</div>
+
+						<div class="login-message">
+							<span class="text-light">New user? </span>
+							<a href="/" th:href="@{/registration}" class="text-info">Register here</a>
+						</div>
+					</fieldset>
+
+					<br>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<input type="submit" name="login-submit" id="login-submit"
+									   class="form-control btn btn-info" value="Log In" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
